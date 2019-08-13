@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random background color</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+            font-size: 1.5rem;
+            border: 3px solid deepskyblue;
+            background: transparent;
+            padding: 15px 25px;
+            border-radius: 35px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button type="button">Click Me!</button>
+    </div>
+    
+   <script>
+       function randomBgColor() {
+           let x = Math.floor(Math.random() * 256);
+           let y = Math.floor(Math.random() * 256);
+           let z = Math.floor(Math.random() * 256);
+           let bgColor = `rgb(${x}, ${y} , ${z})`;
+           console.log(bgColor);
+           document.body.style.background = bgColor;           
+       }
+      
+       let button = document.querySelector('button');
+       button.addEventListener('click',  e => {
+        randomBgColor();        
+       });
+   </script>
+    
+</body>
+</html>
