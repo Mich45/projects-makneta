@@ -143,7 +143,7 @@ main  {
 button {
     background-color: #5f6366;
     border: none;
-    border-radius: 5%;;
+    border-radius: 25px;
     padding: 15px 20px;
     text-align: center;
     display: inline-block;
@@ -159,9 +159,8 @@ button a {
 .all {
     margin-top: 0;
     padding-top: 0;
-    position: relative;
-
-
+    display: block;
+  
 }
 .all li {
     
@@ -171,7 +170,8 @@ button a {
     height: 25px;
     color: #5f6366;
     list-style: none;
-    position: absolute;
+    line-height: 2rem;
+   
 }
 .all li a {
     text-decoration: none;
