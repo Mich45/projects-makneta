@@ -62,7 +62,7 @@ nav .navigation {
     text-decoration: none;
     color: #99ced3;
     letter-spacing: 0.1rem;
-    font-size: 1.1rem;
+    font-size: 1.rem;
     text-align: end;
     font-weight: bold;
 
@@ -71,6 +71,7 @@ nav .navigation {
     text-align: start;
     padding-left: 15px;
 }
+
 .wrapper {
     display: grid;
     grid-template-rows: 5fr;
@@ -176,10 +177,9 @@ button a {
 .all li a {
     text-decoration: none;
     color: #4d6d9a;
-    font-size: 1.3rem;
-    
-
+    font-size: 2.3vh;   
 }
+
 
 .small-image {
     height: 50px;
