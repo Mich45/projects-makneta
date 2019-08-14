@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Color</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+  
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 100px);
+            grid-template-rows: repeat(auto-fit, 100px);
+            grid-auto-flow: dense;
+           
+            background-color: lightgray;
+            height: 90vh;
+            justify-content: center;
+        }
+        .item {
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: 1;
+            border-radius: 2px;
+            width: 100%;
+            height: 100%;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="https://maknetaro.github.io/projects-makneta/">home.</a></li>
+            <li><a href="#">source code.</a></li>
+        </ul>
+    </nav>
+   
+    <div class="container">
+
+    </div>
+    <footer>
+        <p>copyright 2019.  created by Magdalena Rosłaniec.</p>
+    </footer>
+    
+</body>
+<script>    
+    
+    const container = document.querySelector('.container');
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const numberOfCells = Math.floor(width / 100) * Math.floor(height/100);
+    
+    function generateHTML([h,v]) {
+        return `
+            <div class="item h${h} v${v}">
+                  
+            </div>
+        `;
+    }
+    
+    const digits = Array.from({length: numberOfCells}, () => [1, 1])
+    const html = digits.map(generateHTML).join('');
+    container.innerHTML = html;
+
+    let item = document.querySelector('.item');
+    function randomBgColor () {
+        let x = Math.floor(Math.random() * 256);
+        let y = Math.floor(Math.random() * 256);
+        let z = Math.floor(Math.random() * 256);
+
+        let bgColor = `rgb(${x}, ${y}, ${z})`;
+        
+        console.log(bgColor)      
+        return bgColor
+        
+    }    
+
+    let items = document.querySelectorAll('.item');
+    console.log(items);
+    items.forEach( (item, i) => item.addEventListener('mouseover', item =>
+    
+      items[i].style.backgroundColor = randomBgColor()
+      
+    ));
+
+</script>
+</html>
