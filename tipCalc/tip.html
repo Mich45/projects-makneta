@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rokkitt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <main>
+            <section id="amount">
+                <div class="bill-amount">
+                    <h3>Bill Amount</h3>
+                </div>
+                <div class="bill-amount">
+                    $00.00
+                </div>        
+            </section>
+            
+            <section id="tip">
+                
+                <div class="first">
+                    <h4 class="percentage">15%</h4>
+                    <h4 class="tip-amount">$ 00.00</h4>
+                    <h3 class="total">$ 00.00</h3>
+                </div>
+                <div class="second">
+                    <h4 class="percentage">18%</h4>
+                    <h4 class="tip-amount">$ 00.00</h4>
+                    <h3 class="total">$ 00.00</h3>
+                </div>
+                <div class="third">
+                    <h4 class="percentage">20%</h4>
+                    <h4 class="tip-amount">$ 00.00</h4>
+                    <h3 class="total">$ 00.00</h3>
+                </div>
+            </section>
+            
+            <section id="numbers">
+               <button class="item" value="1">1</button>
+               <button class="item" value="2">2</button>
+               <button class="item" value="3">3</button>
+               <button class="item" value="4">4</button>
+               <button class="item" value="5">5</button>
+               <button class="item" value="6">6</button>
+               <button class="item" value="7">7</button>
+               <button class="item" value="8">8</button>
+               <button class="item" value="9">9</button>
+               <button class="item" value="0">0</button>
+               <button class="item" data-action="decimal">.</button>
+               <button class="item" data-action="clear">AC</button>
+
+            </section>
+        </main>
+    </div>
+    <script src="tip.js"></script>
+</body>
+</html>
