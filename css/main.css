@@ -8,6 +8,8 @@ body {
     font-family: 'Inconsolata', monospace;
     background: #5f6366;
     /* background: rgba(2, 103, 112, 0.801); */
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
 
 }
 h1 {
