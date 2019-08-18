@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="css/project5.css">
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li class="home"><a href="https://maknetaro.github.io/projects-makneta/">home.</a></li>
+            <li class="source"><a href="https://github.com/maknetaRo/projects-makneta">source code.</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="card" id="greetings">
+            <h1>Guess My Number</h1>
+        </div>
+        
+        <div class="card" id="message">
+            <p>I'm thinking about a number between 1 and 100. <br> Can you guess it?</p>
+            <button class="btn" onclick="startGame()">YES</button> 
+            
+            <p id="your-number"></p>
+        </div>
+        <div class="card" id="numbers">
+            <input type="text" id="check-number">
+            <button class="btn" id="add-number">Submit</button>
+            
+        </div>
+        <div class="card" id=reset>
+            <button class="btn" onclick="resetGame()">Play Again</button>
+        </div>
+    </main>
+    <footer>
+        <p>created by Magdalena Rosłaniec.</p>
+    </footer>        
+    <script src="js/project5.js"></script>
+</body>
+</html>

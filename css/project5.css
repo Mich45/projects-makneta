@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background: bisque;
+}
+nav .navigation{
+    display: grid;
+    grid-template-areas: 
+        "home home source";
+        list-style: none;
+        padding: 10px;
+
+}
+.home {
+    grid-area: home;
+}
+.source {
+    grid-area:source;
+}
+.navigation li a {
+    display: block;
+    text-decoration: none;
+    color: #4d6d9a;;
+    letter-spacing: 0.1rem;
+    font-size: 1.rem;
+    text-align: start;
+    font-weight: bold;
+    
+}
+
+main {
+    display: grid;
+    grid-template-rows: 10vh 30vh  20vh auto;
+   
+    justify-items: center;
+}
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px  solid #331c00;
+    line-height: 2.5em;
+    width: 50%;
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#greetings, #message, #reset {
+    padding: 4vh;    
+    text-align: center;   
+    justify-items: center;
+}
+#message {
+    margin: auto;
+    display: block;
+}
+ h1, p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #331c00;
+}
+h1 {
+    font-size: 2rem;
+    
+}
+button {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    outline: none;
+    color: #331c00;
+    background:  #ffba66;
+    border: none;
+    
+}
+button:active {
+    outline: none;
+}
+footer {
+    display: grid;
+    
+    background: #4d6d9a;
+    color: #edb5bf;
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+}
