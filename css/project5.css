@@ -8,6 +8,7 @@ body {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     background: bisque;
+    font-size: 1rem;
 }
 nav .navigation{
     display: grid;
@@ -37,6 +38,7 @@ nav .navigation{
 main {
     display: grid;
     grid-template-rows: 10vh 30vh  20vh auto;
+    grid-template-columns: 1fr;
    
     justify-items: center;
 }
@@ -44,14 +46,20 @@ input {
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 3px  solid #331c00;
+    border-bottom: 2px  solid #331c00;
     line-height: 2.5em;
     width: 50%;
     font-size: 1.3rem;
     justify-content: center;
     text-align: center;
 }
-
+#numbers {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;  
+}
 #greetings, #message, #reset {
     padding: 4vh;    
     text-align: center;   
@@ -62,7 +70,7 @@ input {
     display: block;
 }
  h1, p {
-    font-size: 1.5rem;
+    font-size: 1.25em;
     line-height: 2rem;
     color: #331c00;
 }
@@ -72,13 +80,12 @@ h1 {
 }
 button {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 10px 25px;
     outline: none;
     color: #331c00;
     background:  #ffba66;
-    border: none;
-    
+    border: none;    
 }
 button:active {
     outline: none;
